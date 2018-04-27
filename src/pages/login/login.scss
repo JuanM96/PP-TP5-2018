@@ -2,10 +2,13 @@ page-login {
  
   .login-content {
     background: #198138;
- 
+    font: small-caps 100%/200% Verdana;    
+    
     .logo-row {
-      padding-top: 50px;
-      padding-bottom: 20px;
+      text-align: center;
+      align-items: center;
+      margin-left: 15%;
+      width: 70%;
     }
  
     .login-box {
