@@ -1,11 +1,56 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
+    <ion-title>Home</ion-title>
   </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-
-</ion-content>
+</ion-header> -->
+<ion-header>
+    <ion-navbar color="dark">
+      <ion-title>
+        Member Area
+      </ion-title>
+      <ion-buttons end>
+        <button ion-button (click)="logout()">
+          <ion-icon name="log-out"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding class="home">  
+    <ion-row>
+      <ion-col>
+        <button ion-button large full class="submit-btn" (click)="reproducir(1)"><img src="assets/Instrumentos/guitar.png" alt="" height="80px"></button>
+      </ion-col>
+      <ion-col>
+        <button ion-button large full class="submit-btn" (click)="reproducir(2)"><img src="assets/Instrumentos/drum.png" alt="" height="80px"></button>      
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button large full class="submit-btn" (click)="reproducir(3)"><img src="assets/Instrumentos/flute.png" alt="" height="80px"></button>
+      </ion-col>
+      <ion-col>
+        <button ion-button large full class="submit-btn" (click)="reproducir(4)"><img src="assets/Instrumentos/xylo.png" alt="" height="80px"></button>      
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button large full class="submit-btn" (click)="reproducir(5)"><img src="assets/Instrumentos/violin.png" alt="" height="80px"></button>
+      </ion-col>
+      <ion-col>
+        <button ion-button large full class="submit-btn" (click)="reproducir(6)"><img src="assets/Instrumentos/trumpet.png" alt="" height="80px"></button>      
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button large full class="submit-btn2" (click)="reproducir(0)">
+          <ion-icon name="play"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col>
+          <button ion-button large full class="submit-btn2" (click)="reproducir(0)">
+            <ion-icon name="videocam"></ion-icon>
+          </button>
+      </ion-col>
+    </ion-row>
+  </ion-content>

@@ -16,7 +16,41 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-
+<ion-content padding class="home">  
+  <ion-row>
+    <ion-col>
+      <button ion-button large full class="submit-btn" (click)="reproducir(1)"><img src="assets/Animales/dog.png" alt="" height="80px"></button>
+    </ion-col>
+    <ion-col>
+      <button ion-button large full class="submit-btn" (click)="reproducir(2)"><img src="assets/Animales/cat.png" alt="" height="80px"></button>      
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <button ion-button large full class="submit-btn" (click)="reproducir(3)"><img src="assets/Animales/sheep.png" alt="" height="80px"></button>
+    </ion-col>
+    <ion-col>
+      <button ion-button large full class="submit-btn" (click)="reproducir(4)"><img src="assets/Animales/horse.png" alt="" height="80px"></button>      
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <button ion-button large full class="submit-btn" (click)="reproducir(5)"><img src="assets/Animales/duck.png" alt="" height="80px"></button>
+    </ion-col>
+    <ion-col>
+      <button ion-button large full class="submit-btn" (click)="reproducir(6)"><img src="assets/Animales/turkey.png" alt="" height="80px"></button>      
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <button ion-button large full class="submit-btn2" (click)="reproducir(0)">
+        <ion-icon name="play"></ion-icon>
+      </button>
+    </ion-col>
+    <ion-col>
+        <button ion-button large full class="submit-btn2" (click)="reproducir(0)">
+          <ion-icon name="videocam"></ion-icon>
+        </button>
+    </ion-col>
+  </ion-row>
 </ion-content>

@@ -14,6 +14,7 @@ import { SplashAnimadoPage } from '../pages/splash-animado/splash-animado';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
+import { NativeAudio } from '@ionic-native/native-audio';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AuthService } from '../providers/auth-service/auth-service';
 //------------ FireBase
@@ -60,6 +61,7 @@ export const firebaseConfig = {
   providers: [
     StatusBar,
     SplashScreen,
+    NativeAudio,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthService,
     AngularFireAuth

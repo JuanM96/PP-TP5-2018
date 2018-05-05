@@ -75,4 +75,9 @@ export class LoginPage {
          alert.present();
     }
   }
+  public ingresoTest(){
+    this.registerCredentials.email = "admin@admin.com";
+    this.registerCredentials.password = "admin123";
+    this.login2();
+  }
 }
