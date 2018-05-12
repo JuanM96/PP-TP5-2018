@@ -10,8 +10,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
 import { RegistroPage } from '../pages/registro/registro';
 import { SplashAnimadoPage } from '../pages/splash-animado/splash-animado';
-
-
+import { Toast } from '@ionic-native/toast';
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { NativeAudio } from '@ionic-native/native-audio';
@@ -64,7 +64,9 @@ export const firebaseConfig = {
     NativeAudio,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthService,
-    AngularFireAuth
+    AngularFireAuth,
+    Toast,
+    ScreenOrientation
   ]
 })
 export class AppModule {}
